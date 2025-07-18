@@ -1,0 +1,8 @@
+Bootstrap: docker
+From: python:3.9-slim
+
+%post
+    pip install numpy pandas scikit-learn matplotlib
+
+%runscript
+    python "$@"
