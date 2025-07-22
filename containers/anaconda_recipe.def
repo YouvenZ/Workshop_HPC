@@ -2,12 +2,12 @@ Bootstrap: docker
 From: continuumio/miniconda3
 
 %files
-    data_env.yml /opt/
+    workshop.yml /opt/
 
 %post
     # Define environment name
-    ENV_NAME="data_env"
-    CONFIG_FILE="/opt/data_env.yml"
+    ENV_NAME="workshop"
+    CONFIG_FILE="/opt/workshop.yml"
     
     # Create conda environment with specific name
     /opt/conda/bin/conda env create -f ${CONFIG_FILE} -n ${ENV_NAME}
@@ -16,7 +16,7 @@ From: continuumio/miniconda3
     /opt/conda/bin/conda clean -afy
 
 %environment
-    export ENV_NAME="data_env"
+    export ENV_NAME="workshop"
     export PATH="/opt/conda/envs/${ENV_NAME}/bin:$PATH"
 
 %runscript

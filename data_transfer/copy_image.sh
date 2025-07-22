@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration - easily modify these values as needed
-SOURCE_IMAGE="path/to/your/image.sif"  # Replace with your actual source image path
+SOURCE_IMAGE="/home/youven/code/HPC_workshop/workshop_new.sif"  # Replace with your actual source image path
 DEST_SERVER="rzeghlache@195.83.246.95"
 DEST_DIR="/data_GPU/rzeghlache/containers/"
 

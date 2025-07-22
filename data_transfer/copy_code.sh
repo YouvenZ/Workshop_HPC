@@ -1,6 +1,6 @@
 #!/bin/bash
 # Configuration - easily modify these values as needed
-SOURCE_DIR="/path/to/your/code"  # Replace with your actual source directory
+SOURCE_DIR="/home/youven/code/HPC_workshop"  # Replace with your actual source directory
 DEST_SERVER="rzeghlache@195.83.246.95"
 DEST_DIR="/data_GPU/rzeghlache/"
 EXCLUDE_FILE="${SOURCE_DIR}/rsync_ignore.text"
@@ -24,7 +24,7 @@ echo "  To: $DEST_SERVER:$DEST_DIR"
 echo "  Using exclude patterns from: $EXCLUDE_FILE"
 
 # Execute the rsync with reliable options:
-# -a: archive mode (preserves permissions, timestamps, etc.)
+# -a: archive mode (preserves permissions, timestamps, etc.)+
 # -v: verbose output
 # -z: compression for faster transfer
 # -h: human-readable output
